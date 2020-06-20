@@ -1,6 +1,53 @@
 body {
-    //background-image: url("https://www.ppic.org/wp-content/uploads/DiverseCollegeStudents-640x288.jpg");
+    font-family: monospace;
+    background-image: url("https://images.wallpaperscraft.com/image/code_programming_symbols_140997_1920x1080.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(216, 50%, 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px
+}
+#radioButtonForm {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px
+    
+}
+#nameEmailAge {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px
+}
+#currentRoleFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px
+}
+#age #email #name{
+    width: 200px;
+    
+    
+}
+#fullSurveyFormBox {
+    background-color: hsla(216, 74%, 59%, 0.856);
+    box-shadow: 0 4px 8px 0 rgba(1, 15, 90, 0.616);
+    transition: 0.3s;
+    padding: 2px 16px;
+}
+#otherSuggestionsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px
 }
