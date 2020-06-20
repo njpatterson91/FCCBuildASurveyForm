@@ -44,10 +44,29 @@ header {
     box-shadow: 0 4px 8px 0 rgba(1, 15, 90, 0.616);
     transition: 0.3s;
     padding: 2px 16px;
+    width: 500px;
 }
 #otherSuggestionsDiv {
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 25px
+    padding: 25px;
+    
+}
+#headerFlex {
+    background-color: hsla(0, 0%, 100%, 0.747);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.616);
+    transition: 0.3s;
+    padding: 2px 16px;
+    width: 500px;
+}
+
+#submitDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px;
+}
+#submit {
+    height: 200px !important;
 }
