@@ -16,6 +16,20 @@ body {
     padding: 25px
     
 }
+#radioButtonFormRecommend{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px
+    
+}
+#havingFunCheck {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px
+    
+}
 #nameEmailAge {
     display: flex;
     flex-direction: column;

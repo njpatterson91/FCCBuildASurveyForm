@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!--Main page for FreeCodeCamp: Build a survey form project-->
 <html>
     <head>
         <link rel="stylesheet" href="./style.css">
@@ -19,23 +19,23 @@
         <!--User Story #4-->
         
             <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter your name:">
+            <input type="text" id="name" placeholder="Enter your name:" required>
         
         <!--User Story #5 & #6-->
         
             <label for="email" id="email-label">Email</label>
-            <input type="email" id="email" placeholder="Enter your email:">
+            <input type="email" id="email" placeholder="Enter your email:" required>
         
         <!--User Story #7-->
         
             <label for="age" id="number-label">Age</label>
-            <input type="number" id="age" min="1" max="110" placeholder="Enter your age:">
+            <input type="number" id="number" min="1" max="110" placeholder="Enter your age:" required>
         
     </div>
     <div id="currentRoleFlex">
         <div>
         <label for="dropdown" id="currentRole-label">Select one</label>
-        <select name="currentRole" id="currentRole" >
+        <select name="currentRole" id="dropdown" >
             <option value="" disabled selected>Select Current Role</option>
             <option value="student">Student</option>
             <option value="ftJob">Full Time Job</option>
@@ -45,62 +45,90 @@
         </select>
         </div>
     </div>
+    <div id="radioButtonFormRecommend">
+        <div>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" name="radioRecommend" id="definitely" value="definitely">
+            <label for="definitely">Definitely</label>
+        </div>
+        <div>
+            <input type="radio" name="radioRecommend" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
+        </div>
+        <div>
+            <input type="radio" name="radioRecommend" id="notSure" value="notSure">
+            <label for="notSure">Not Sure</label>
+        </div>
+
+    </div>
     <!--Radio Buttons for What would you like to see improved-->
     
     <div id="radioButtonForm">
         <div>
             <p>What would you like to see improved</p>
-            <input type="radio" name="Front-end Projectes" id="front-endProjects">
+            <input type="radio" name="seeImproved" id="front-endProjects" value="front-endProjects">
             <label for="front-endProjects">Front-end Projects</label>
         </div>
         <div>
-            <input type="radio" name="Back-end Projects" id="Back-endProjects">
+            <input type="radio" name="seeImproved" id="Back-endProjects" value="Back-endProjects">
             <label for="Back-endProjects">Back-end Projects</label>
         </div>
         <div>
-            <input type="radio" name="Data Visualization" id="dataVisualization">
+            <input type="radio" name="seeImproved" id="dataVisualization" value="DataVisualization">
             <label for="dataVisualization">Data Visualization</label>
         </div>
         <div>
-            <input type="radio" name="Challenges" id="Challenges">
+            <input type="radio" name="seeImproved" id="Challenges" value="Challenges">
             <label for="Challenges">Challenges</label>
         </div>
         <div>
-            <input type="radio" name="Open Source Community" id="osCommunity">
+            <input type="radio" name="seeImproved" id="osCommunity" value="osCommunity">
             <label for="osCommunity">Open Source Community</label>
         </div>
         <div>
-            <input type="radio" name="Gitter help rooms" id="gitterHelpRooms">
+            <input type="radio" name="seeImproved" id="gitterHelpRooms" value="gitterHelpRooms">
             <label for="gitterHelpRooms">Gitter help rooms</label>
         </div>
         <div>
-            <input type="radio" name="Videos" id="videos">
+            <input type="radio" name="seeImproved" id="videos" value="videos">
             <label for="videos">Videos</label>
         </div>
         <div>
-            <input type="radio" name="City Meetups" id="cityMeetups">
+            <input type="radio" name="seeImproved" id="cityMeetups" value="cityMeetups">
             <label for="cityMeetups">City Meetups</label>
         </div>
         <div>
-            <input type="radio" name="Wiki" id="wiki">
+            <input type="radio" name="seeImproved" id="wiki" value="wiki">
             <label for="wiki">Wiki</label>
         </div>
         <div>
-            <input type="radio" name="Forum" id="forum">
+            <input type="radio" name="seeImproved" id="forum" value="forum">
             <label for="forum">Forum</label>
         </div>
         <div>
-            <input type="radio" name="Additional Courses" id="additionalCourses">
+            <input type="radio" name="seeImproved" id="additionalCourses" value="additionalCourses">
             <label for="additionalCourses">Additional Courses</label>
         </div>
         
 
     </div>
+    <div id="havingFunCheck">
+    <div>
+        <p>Are you having fun?</p>
+        <input type="checkbox" name="havingFun" id="funYes" value="funYes">
+        <label for="funYes">Yes</label>
+    </div>
+    <div>
+        <input type="checkbox" name="havingFun" id="funNo" value="funNo">
+        <label for="funNo">No</label>
+    </div>
+</div>
     <div id="otherSuggestionsDiv">
         <label for="otherSuggestions">Other Suggestions</label>
         <textarea name="otherSuggestions" id="otherSuggestions" cols="30" rows="10"></textarea>
         
     </div>
+    
     <div id="submitDiv">
         <input type="submit" value="submit" id="submit">
     </div>
